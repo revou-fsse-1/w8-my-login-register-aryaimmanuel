@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js"></script>
+    <style src="index.css"></style>
+    <title>Login Register</title>
+  </head>
+  <body>
+    <hr />
+    <div>
+      <form id="form">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="Enter your username!"
+        />
+        <input
+          type="password"
+          name="pw"
+          id="pw"
+          required
+          placeholder="Enter your password!"
+        />
+        <button onclick="store()" type="button">daftar</button>
+      </form>
+    </div>
+
+    <hr />
+
+    <div>
+      <form id="form">
+        <input
+          type="text"
+          name="emailLogin"
+          id="emailLogin"
+          required
+          placeholder="Enter your username!"
+        />
+        <input
+          type="password"
+          name="pwLogin"
+          id="pwLogin"
+          required
+          placeholder="Enter your password!"
+        />
+        <button onclick="check()" type="button">masuk</button>
+      </form>
+    </div>
+  </body>
+</html>

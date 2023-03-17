@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <script src="all_data.js"></script>
+    <script src="save.js"></script>
+    <script src="find.js"></script>
+    <script src="remove.js"></script>
+  </head>
+  <body>
+    <form id="form">
+      <input type="hidden" name="id" id="id" />
+      <label>Name</label>
+      <input
+        type="text"
+        placeholder="Name"
+        name="name"
+        id="name"
+      />
+      <br />
+      <label>Age</label>
+      <input type="number" placeholder="Age" name="age" id="age" />
+      <br />
+      <label>Email</label>
+      <input type="text" name="email" placeholder="Email" id="email"></input>
+      <br />
+      <button type="button" onclick="save()">Save</button>
+      <button type="button" onclick="clearData()">Reset</button>
+    </form>
+
+    <table id="datatable">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Email</th>
+          <th>Edit</th>
+          <th>Hapus</th>
+        </tr>
+      </thead>
+      <tbody id="table"></tbody>
+    </table>
+
+    <script>
+      allData();
+    </script>
+    <script>
+      function clearData() {
+        document.getElementById("form").reset();
+        document.getElementById("id").value = "";
+      }
+    </script>
+  </body>
+</html>
